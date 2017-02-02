@@ -43,11 +43,17 @@ Tomcat runs with privileges of user "tomcat". It is configured in tomcat init sc
 + What configuration files are used to make components work with each other?
 
 httpd:
--- httpd.conf: include vhost.conf 
+
+-- httpd.conf: include vhost.conf
+
 -- vhost.conf: load and configure mod_jk module, define vhost
+
 -- workers.properties: define workers
+
 tomcat:
+
 -- server.xml: define ajp connector
+
 -- setenv.sh: define environment variables required by tomcat
 
 + What does it mean: “load average: 1.18, 0.95, 0.83”?
